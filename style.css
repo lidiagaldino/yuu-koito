@@ -1,0 +1,112 @@
+@font-face{
+    font-family: "Rampart One";
+    src: url(./font/RampartOne-Regular.ttf);
+}
+@font-face{
+    font-family: Rakkas;
+    src: url(./font/Rakkas-Regular.ttf);    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #FFF0FC 0%, rgba(100, 0, 78, 0.99) 100%);
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 218px;
+    height: 62px;
+    justify-self: flex-start;
+    margin: 10px;
+}
+.textos{
+    font-family: "Rampart One";
+    color: white;
+    margin: 10px;
+    margin-right: 20px;
+    word-spacing: 20px;
+    cursor: pointer;
+}
+#home, #personagens, #noticias{
+    background: linear-gradient(to right, #FF0099,  #FF0099 50%, rgb(0, 0, 0) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: .3s all ease-in-out;
+}
+#home:hover, #personagens:hover, #noticias:hover{
+    background-position: 0 100%;
+}
+h1{
+    color: black;
+    font-family: "Rampart One";
+    padding-top: 35px;
+    align-self: center;
+}
+.text{
+    width: 700px;
+    text-align: center;
+    color: black;
+    font-family: Rakkas;
+    padding-top: 40px;
+    align-self: center;
+}
+.button {
+    display: flex;
+    transition-duration: 0.4s;
+    background-color: #FFA3EB;
+    width: 167px;
+    height: 41px;
+    align-self: center;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #ffc4eb;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Rampart One";
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.Koito{
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    align-self: center;
+}
+@media(max-width: 768px){
+    .text{
+        width: 340px;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+    }
+}
